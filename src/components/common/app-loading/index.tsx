@@ -12,7 +12,7 @@ const AppLoading: React.FC = () => {
         <>
             {isLoading ? (
                 <Backdrop>
-                    <Label>{message || 'Carregando...'}</Label>
+                    <Label>{message || 'Loading...'}</Label>
                 </Backdrop>
             ) : (
                 <></>

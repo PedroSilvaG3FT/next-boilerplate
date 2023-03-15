@@ -1,6 +1,6 @@
 import React from 'react'
+import { Backdrop, Label } from './styles'
 import { useMapState } from '@/hooks/redux.hook'
-import { Backdrop, Image, Label } from './styles'
 import { LoadingStateInterface } from '@/store/@interfaces/loading.interface'
 
 const AppLoading: React.FC = () => {

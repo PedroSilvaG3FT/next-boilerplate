@@ -6,7 +6,9 @@ const common = {
         green: '#5EC278',
         yellow: '#FFD410',
         primary: '#518DE0',
-        secondary: '#E94560'
+        secondary: '#E94560',
+        placeholder: '#34405480',
+        placeholder_icon: '#bdc3ce'
     },
     spacing: {
         headerHeight: '5rem'

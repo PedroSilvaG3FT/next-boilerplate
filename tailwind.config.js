@@ -1,6 +1,9 @@
 const content = [
+    './src/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
     './src/pages/**/*.{js,jsx,ts,tsx}',
-    './src/styles/**/*.{js,jsx,ts,tsx}'
+    './src/styles/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}'
 ]
 
 const theme = {

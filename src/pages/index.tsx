@@ -1,32 +1,31 @@
 import React from 'react'
-import Logo from '@/assets/vercel.png'
+import Styles from '@/styles/pages/home'
+import enviroments from '@/config/enviroments'
 import AppHead from '@/components/common/app-head'
+import ExempleForm from '@/components/exemple-form'
 import { THEME_ITEMS } from '@/contants/theme-type'
 import { uiActions } from '@/store/reducers/ui.reducer'
-import { Container, Image, Title, Content, Button } from '@/styles/pages/home'
 
 const Home: React.FC = () => {
     return (
         <>
             <AppHead title="Hello World" />
 
-            <Container>
-                <Title>Hello World</Title>
-                <Title>TS | Tailwind</Title>
-
-                <Image src={Logo} alt="logo" />
-
-                <Content>
+            <Styles.Container>
+                <Styles.Title>Hello World</Styles.Title>
+                ENV: {enviroments.apiUrl}
+                <Styles.Content>
                     {THEME_ITEMS.map((item, index) => (
-                        <Button
+                        <Styles.Button
                             key={index}
                             onClick={() => uiActions.setTheme(item.id)}
                         >
                             {item.label}
-                        </Button>
+                        </Styles.Button>
                     ))}
-                </Content>
-            </Container>
+                </Styles.Content>
+                <ExempleForm />
+            </Styles.Container>
         </>
     )
 }

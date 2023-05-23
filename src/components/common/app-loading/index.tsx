@@ -1,5 +1,5 @@
 import React from 'react'
-import { Backdrop, Label } from './styles'
+import Styles from './styles'
 import { useMapState } from '@/hooks/redux.hook'
 import { LoadingStateInterface } from '@/store/@interfaces/loading.interface'
 
@@ -11,9 +11,9 @@ const AppLoading: React.FC = () => {
     return (
         <>
             {isLoading ? (
-                <Backdrop>
-                    <Label>{message || 'Loading...'}</Label>
-                </Backdrop>
+                <Styles.Backdrop>
+                    <Styles.Label>{message || 'Loading...'}</Styles.Label>
+                </Styles.Backdrop>
             ) : (
                 <></>
             )}

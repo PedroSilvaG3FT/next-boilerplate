@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Clone template
 
 ```run
-yarn create next-app [project-name] -e https://github.com/PedroSilvaG3FT/next-ts-starter
+yarn create next-app [project-name] -e https://github.com/PedroSilvaG3FT/next-boilerplate
 ```
 ## Getting Started
 

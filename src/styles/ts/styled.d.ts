@@ -1,5 +1,5 @@
 import 'styled-components'
-import theme from '@/styles/css/ts/theme'
+import theme from '@/styles/ts/theme'
 
 export type Theme = typeof theme
 
